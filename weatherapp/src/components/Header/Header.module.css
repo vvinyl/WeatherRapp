@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Schabo';
+    src: url("../../assets/font/SCHABO-Condensed.woff") format("woff");
+}
+
+.header {
+    font-family: "Schabo";
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline-block; /* Aby kursor był poprawnie umieszczony */
+  }
+  
