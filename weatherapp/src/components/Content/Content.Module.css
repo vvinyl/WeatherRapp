@@ -1,0 +1,16 @@
+.bg{
+    background-color: antiquewhite;
+}
+
+.mainCard{
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #efefef;
+}   

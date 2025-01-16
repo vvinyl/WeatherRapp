@@ -6,41 +6,10 @@ export const Header = () => {
   // nazwa
   const fullText = "CLOUDIFY";
 
-//   // stan do wyświetlania fragmentu
-//   const [displayText, setDisplayTexd] = useState("");
-
-//   // kierunek pisania
-//   const [direction, setDirection] = useState(1);
-
-//   // efekt pisania
-//   useEffect(() => {
-//     const intervalId = setInterval(() => {
-//       setDisplayTexd((prev) => {
-//         // pisanie
-//         if (direction === 1) {
-//           if (prev.length < fullText.length) {
-//             return fullText.slice(0, prev.length + 1);
-//           } else {
-//             setDirection(-1);
-//             return prev;
-//           }
-//         } else {
-//           // kasowanie
-//           if (prev.length > 0) {
-//             return prev.slice(0, -1);
-//           } else {
-//             setDirection(1);
-//             return "";
-//           }
-//         }
-//       });
-//     }, 400);
-//     return () => clearInterval(intervalId);
-//   }, [direction, fullText]);
   return (
     <Container fluid className={styles.containerTop}>
         <Row className="justify-content-center">
-        <Col xs="auto">
+        <Col xs={12}>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="3rem"
@@ -55,10 +24,9 @@ export const Header = () => {
         </Col>
         </Row>
         <Row className="justify-content-center">
-        <Col xs="auto">
+        <Col xs={12}>
             <p className={`${styles.header}`}>
                 {fullText}
-                {/* <span className={styles.cursor}>|</span> */}
             </p>
         </Col>
         </Row>
